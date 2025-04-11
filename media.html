@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+
+  <body>
+    <p>Audio</p>
+
+    <audio controls loop preload="auto">
+      <source
+        src="./assets/audio/file_example_MP3_700KB.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <p>Video</p>
+
+    <video width="400px" height="320px" controls>
+      <source src="./assets/video/large.mp4" />
+      <!-- <source src="./assets/video/file_example_MP4_480_1_5MG.mp4" /> -->
+    </video>
+
+    <p>Pictures</p>
+
+    <picture>
+      <source
+        media="(min-width:768px)"
+        srcset="./assets/images/pexels-gya-den-768256-2386141.jpg"
+      />
+      <img
+        style="border: 1px solid red"
+        src="./assets/images/pexels-gya-den-768256-2386141.jpg"
+        width="200px"
+        height="200px"
+      />
+    </picture>
+  </body>
+</html>
