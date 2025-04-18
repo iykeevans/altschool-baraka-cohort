@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.kingsley {
+  background-color: #eee;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: yellow;
+  padding: 20px 10px 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.heading {
+  color: black;
+  font-weight: 500;
+}
+
+.form {
+  background-color: black;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+#form {
+  background-color: white;
+}
