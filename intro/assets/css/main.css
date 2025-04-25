@@ -24,6 +24,9 @@ body {
   text-align: left;
   margin-top: 20px;
   margin-left: 20px;
+  border-width: 5px 1px 10px;
+  border-style: dashed solid dotted double;
+  border-color: black;
 }
 
 .heading {
