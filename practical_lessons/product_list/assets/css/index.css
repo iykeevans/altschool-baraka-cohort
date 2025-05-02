@@ -1,13 +1,24 @@
+:root {
+  --primary-color: #c83b0e;
+  --secondary-color: #a89e9d;
+  --tertiary-color: #fcf8f5;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: RedHatText;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   /* padding: 0 100px; */
+}
+
+body {
+  background-color: var(--tertiary-color);
 }
 
 .main {
@@ -36,20 +47,56 @@
   list-style: none;
 }
 
+.products__list-item-tag {
+  color: var(--secondary-color);
+  margin-top: 40px;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.products__list-item-description {
+  font-weight: 600;
+}
+
+.products__list-item-amount {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.products__list-item-flt-btn {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  column-gap: 10px;
+  border: 1px solid var(--secondary-color);
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
 .products__image-container {
   height: 250px;
   background-color: #eee;
   border-radius: 8px;
+  position: relative;
 }
 
 .cart {
-  background-color: #eee;
+  background-color: white;
   border-radius: 8px;
   width: 30%;
   padding: 20px;
 }
 .cart__heading {
   margin-bottom: 16px;
+  color: var(--primary-color);
 }
 .cart__list {
 }
@@ -59,10 +106,32 @@
   justify-content: space-between;
 }
 
+.cart__list-item-heading {
+  font-weight: 600;
+}
+
 .cart__list-item-details {
   display: flex;
 }
 
 .cart__total {
   margin: 20px 0;
+}
+
+@font-face {
+  font-family: RedHatText;
+  font-weight: 700;
+  src: url("../fonts/RedHatText-Bold.ttf");
+}
+
+@font-face {
+  font-family: RedHatText;
+  font-weight: 400;
+  src: url("../fonts/RedHatText-Regular.ttf");
+}
+
+@font-face {
+  font-family: RedHatText;
+  font-weight: 600;
+  src: url("../fonts/RedHatText-SemiBold.ttf");
 }
