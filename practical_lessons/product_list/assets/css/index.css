@@ -22,13 +22,14 @@ body {
 }
 
 .main {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
 }
 
 .header {
-  padding-top: 50px;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .products {
@@ -88,11 +89,19 @@ body {
   position: relative;
 }
 
+.products__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .cart {
   background-color: white;
   border-radius: 8px;
   width: 30%;
   padding: 20px;
+  align-self: start;
 }
 .cart__heading {
   margin-bottom: 16px;
@@ -161,9 +170,9 @@ body {
 }
 
 .cart__info {
-  background-color: #ccc;
+  background-color: #fcf8f5;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   height: 46px;
   display: flex;
   align-items: center;
